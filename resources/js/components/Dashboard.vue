@@ -1,6 +1,6 @@
 <template>
     <div>
-        <heading class="mb-6">Nova Log Viewer</heading>
+        <heading class="mb-6">Adminlogs - Dashboard</heading>
 
         <!-- Three columns -->
         <div class="flex mb-4">

@@ -34254,7 +34254,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("heading", { staticClass: "mb-6" }, [_vm._v("Nova Log Viewer")]),
+      _c("heading", { staticClass: "mb-6" }, [_vm._v("Adminlogs - Dashboard")]),
       _vm._v(" "),
       _c("div", { staticClass: "flex mb-4" }, [
         _c(
@@ -34419,7 +34419,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.uk-badge[data-v-98148ee8] {\n    padding: 5px 10px;\n    height: 32px;\n}\n", ""]);
 
 // exports
 
@@ -35461,7 +35461,7 @@ exports = module.exports = __webpack_require__(7)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.uk-badge[data-v-5682f22f] {\n    padding: 5px 10px;\n    height: 32px;\n}\n", ""]);
 
 // exports
 
@@ -35549,8 +35549,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass:
-                "inline-block p-1 text-sm font-semibold text-white mr-2",
+              staticClass: "inline-block uk-badge",
               style: {
                 "background-color":
                   key !== "date"
@@ -35673,7 +35672,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("heading", { staticClass: "mb-6" }, [_vm._v("Nova Log Viewer")]),
+      _c("heading", { staticClass: "mb-6" }, [_vm._v("Adminlogs")]),
       _vm._v(" "),
       _c("card", { staticClass: "flex flex-col items-center justify-center" }, [
         _c(
@@ -35692,7 +35691,7 @@ var render = function() {
                       _c(
                         "span",
                         {
-                          staticClass: "inline-block p-1  text-sm text-white",
+                          staticClass: "inline-block uk-badge",
                           style: {
                             "background-color":
                               key !== "date" ? _vm.getColor(key) : "#1976D2"

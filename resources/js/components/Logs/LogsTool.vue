@@ -1,13 +1,13 @@
 <template>
     <div>
-        <heading class="mb-6">Nova Log Viewer</heading>
+        <heading class="mb-6">Adminlogs</heading>
 
         <card class="flex flex-col items-center justify-center">
             <table class="table w-full" cellpadding="0" cellspacing="0">
                 <thead>
                     <tr>
                         <th v-for="(header, key) in headers" :key="key">
-                            <span :style="{ 'background-color' : key !== 'date' ? getColor(key) : '#1976D2' }" class="inline-block p-1  text-sm text-white">
+                            <span :style="{ 'background-color' : key !== 'date' ? getColor(key) : '#1976D2' }" class="inline-block uk-badge">
                                 {{ header }}
                             </span>
                         </th>
@@ -125,4 +125,8 @@ export default {
 </script>
 
 <style scoped>
+    .uk-badge {
+        padding: 5px 10px;
+        height: 32px;
+    }
 </style>
