@@ -3,7 +3,7 @@
         <td class="p-2">
             <p>
                 <span :style="{'background-color' : getColor(entry.level) }" class="inline-block px-3 py-1 text-sm text-white font-semibold mr-3">
-                {{ entry.level.toUpperCase() }}
+                    {{ entry.level.toUpperCase() }}
                 </span>
 
                 Time : {{ entry.datetime }}

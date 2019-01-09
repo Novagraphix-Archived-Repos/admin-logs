@@ -6,11 +6,11 @@
             <div class="w-1/6">
                 <card class="flex mr-1 rounded-none">
                     <div class="w-full p-4">
-                       <div>
-                           <div>
-                               <div class="font-bold text-xl mb-2">Levels</div>
-                           </div>
-                       </div>
+                        <div>
+                            <div>
+                                <div class="font-bold text-xl mb-2">Levels</div>
+                            </div>
+                        </div>
 
                         <ul class="list-reset">
                             <li class="leading-wide text-sm" v-for="(menu, key) in menus" :key="key">
@@ -52,26 +52,26 @@
                         </div>
                         <table class="w-full">
                             <tbody class="align-baseline">
-                            <tr>
-                                <td style="width: 23%;" class="text-sm pl-0 p-2">File Path :</td>
-                                <td>{{ info.path }}</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 23%;" class="text-sm pl-0 p-2">Log Entries :</td>
-                                <td>{{ info.entries }}</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 23%;" class="text-sm pl-0 p-2">Size :</td>
-                                <td>{{ info.size }}</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 23%;" class="text-sm pl-0 p-2">Created At :</td>
-                                <td>{{ info.created_at }}</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 23%;" class="text-sm pl-0 p-2">Updated At :</td>
-                                <td>{{ info.updated_at }}</td>
-                            </tr>
+                                <tr>
+                                    <td style="width: 23%;" class="text-sm pl-0 p-2">File Path :</td>
+                                    <td>{{ info.path }}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 23%;" class="text-sm pl-0 p-2">Log Entries :</td>
+                                    <td>{{ info.entries }}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 23%;" class="text-sm pl-0 p-2">Size :</td>
+                                    <td>{{ info.size }}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 23%;" class="text-sm pl-0 p-2">Created At :</td>
+                                    <td>{{ info.created_at }}</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 23%;" class="text-sm pl-0 p-2">Updated At :</td>
+                                    <td>{{ info.updated_at }}</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -80,18 +80,18 @@
                 <card class="flex rounded-none mt-1 p-2">
                     <table class="table w-full border-0">
                         <thead>
-                        <tr>
-                            <th>Logs</th>
-                            <th> Actions</th>
-                        </tr>
+                            <tr>
+                                <th>Logs</th>
+                                <th> Actions</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <log
-                            :entry="entry"
-                            v-for="(entry, key) in entries"
-                            :key="key"
-                            @stack="openStackModal(entry)"
-                        />
+                            <log
+                                :entry="entry"
+                                v-for="(entry, key) in entries"
+                                :key="key"
+                                @stack="openStackModal(entry)"
+                            />
                         </tbody>
                     </table>
                 </card>

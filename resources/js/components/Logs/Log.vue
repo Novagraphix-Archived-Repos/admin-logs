@@ -10,10 +10,10 @@
         </td>
         <td>
             <router-link :to="{name: 'nova-log-viewer-show', params: {
-                date: date,
-                level: 'all'
-            }}"
-                class="appearance-none mr-3 text-70 hover:text-info"
+                             date: date,
+                             level: 'all'
+                         }}"
+                         class="appearance-none mr-3 text-70 hover:text-info"
             >
                 <icon type="view" width="22" height="18" view-box="0 0 22 16" />
             </router-link>
