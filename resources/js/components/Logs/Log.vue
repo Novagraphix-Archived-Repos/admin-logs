@@ -48,7 +48,7 @@
         },
         computed: {
             downloadUrl() {
-                return '/nova-vendor/php-junior/nova-log-viewer/download/'
+                return '/nova-vendor/novagraphix/nova-log-viewer/download/'
             },
         },
         methods: {

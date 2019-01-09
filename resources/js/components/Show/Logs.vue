@@ -172,12 +172,12 @@ export default {
     },
     watch: {
         '$route.params.level': function(level) {
-            this.getLog(`/nova-vendor/php-junior/nova-log-viewer/get/${this.$route.params.date}/${level}`)
+            this.getLog(`/nova-vendor/novagraphix/nova-log-viewer/get/${this.$route.params.date}/${level}`)
         },
     },
     computed: {
         downloadUrl() {
-            return '/nova-vendor/php-junior/nova-log-viewer/download/';
+            return '/nova-vendor/novagraphix/nova-log-viewer/download/';
         },
     },
     mounted() {
@@ -190,7 +190,7 @@ export default {
         getLog(url) {
             url =
                 url ||
-                `/nova-vendor/php-junior/nova-log-viewer/get/${this.$route.params.date}/${
+                `/nova-vendor/novagraphix/nova-log-viewer/get/${this.$route.params.date}/${
                     this.$route.params.level
                 }`;
             axios.get(url).then(({ data }) => {
@@ -227,7 +227,7 @@ export default {
         confirmDelete() {
             axios({
                 method: 'delete',
-                url: '/nova-vendor/php-junior/nova-log-viewer/delete',
+                url: '/nova-vendor/novagraphix/nova-log-viewer/delete',
                 data: {
                     date: this.deleting.date,
                 },
