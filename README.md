@@ -25,7 +25,7 @@ public function tools()
 {
     return [
         // ...
-        new \PhpJunior\NovaLogViewer\Tool(),
+        new \Novagraphix\NovaLogViewer\Tool(),
     ];
 }
 ```
