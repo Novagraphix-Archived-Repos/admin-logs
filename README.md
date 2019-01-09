@@ -5,7 +5,7 @@
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require php-junior/nova-logs
+composer require novagraphix/admin-logs
 ```
 
 **LogViewer** support only the **daily** log channel, so make sure that the `LOG_CHANNEL` is set to `daily` instead of `stack` in your `.env` file.
@@ -25,7 +25,7 @@ public function tools()
 {
     return [
         // ...
-        new \PhpJunior\NovaLogViewer\Tool(),
+        new \Novagraphix\NovaLogViewer\Tool(),
     ];
 }
 ```
