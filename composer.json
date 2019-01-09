@@ -1,0 +1,45 @@
+{
+    "name": "novagraphix/admin-logs",
+    "description": "Provides an AdminLog Viewer for Laravel Nova",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephan Jess",
+            "email": "s.jess@novagraphix.de"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "arcanedev/log-viewer": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Novagraphix\\NovaLogViewer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Novagraphix\\NovaLogViewer\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Novagraphix\\NovaLogViewer\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
