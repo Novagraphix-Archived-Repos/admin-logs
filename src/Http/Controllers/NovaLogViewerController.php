@@ -57,7 +57,7 @@ class NovaLogViewerController extends Controller
         $stats   = $this->logViewer->statsTable();
         $headers = $stats->header();
         $rows    = $this->paginate($stats->rows(), $request);
-
+        
         return response()->json([
             'headers' => $headers,
             'rows' => $rows

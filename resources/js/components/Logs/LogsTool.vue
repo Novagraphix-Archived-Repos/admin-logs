@@ -17,6 +17,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <div v-for="(log, date) in logs"></div>
                     <log
                         :log="log"
                         :date="date"
@@ -62,7 +63,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import Log from './Log';
 import color from '../../utils/color'
 
@@ -89,13 +89,15 @@ export default {
             return color(level)
         },
         async getListLogs(url) {
-            url = url || '/nova-vendor/novagraphix/nova-log-viewer/get_list_logs';
-            const { data } = await axios.get(url);
-            this.headers = data.headers;
-            this.rows = data.rows;
-            this.logs = data.rows.data;
-            this.prev = data.rows.prev_page_url;
-            this.next = data.rows.next_page_url;
+            await axios.get('/nova-vendor/novagraphix/nova-log-viewer/get_list_logs', { params: {} })
+            .then(response => {
+                this.headers = response.data.headers;
+                this.rows = response.data.rows;
+                this.logs = response.data.rows.data;
+                this.prev = response.data.rows.prev_page_url;
+                this.next = response.data.rows.next_page_url;
+            })
+            .catch(error => {});            
         },
 
         openDeleteModal(log) {

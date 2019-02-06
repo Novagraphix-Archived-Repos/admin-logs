@@ -86,6 +86,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <div v-for="(entry, key) in entries"></div>
                             <log
                                 :entry="entry"
                                 v-for="(entry, key) in entries"
