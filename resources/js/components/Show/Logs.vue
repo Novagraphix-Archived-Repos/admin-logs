@@ -4,7 +4,7 @@
 
         <div class="flex mb-4">
             <div class="w-1/6">
-                <card class="flex mr-1 rounded-none">
+                <card class="flex mr-1 card">
                     <div class="w-full p-4">
                         <div>
                             <div>
@@ -23,8 +23,8 @@
                                         level: key
                                     }})"
                                 >
-                                    <span class="text-white">{{ menu.name }}</span>
-                                    <span class="flex rounded-full text-white uppercase px-2 py-1 text-xs font-bold mr-3">{{ menu.count }}</span>
+                                    <span class="text-11">{{ menu.name }}</span>
+                                    <span class="flex rounded-full text-11 uppercase px-2 py-1 text-xs font-bold mr-3">{{ menu.count }}</span>
                                 </button>
                             </li>
                         </ul>
@@ -42,10 +42,10 @@
                             <div class="float-right">
                                 <div class="inline-flex">
                                     <a :href="downloadUrl + log.date" target="_blank" class="bg-success font-bold py-2 px-4 rounded-l inline-flex items-center">
-                                        <icon class="fill-current w-4 h-4 text-white" type="download" view-box="0 0 24 24" />
+                                        <icon class="fill-current w-4 h-4 text-11" type="download" view-box="0 0 24 24" />
                                     </a>
                                     <button @click="openDeleteModal(log)" class="bg-danger font-bold py-2 px-4 rounded-r inline-flex items-center">
-                                        <icon class="fill-current w-4 h-4 text-white" type="delete" viewBox="0 0 20 20" />
+                                        <icon class="fill-current w-4 h-4 text-11" type="delete" viewBox="0 0 20 20" />
                                     </button>
                                 </div>
                             </div>

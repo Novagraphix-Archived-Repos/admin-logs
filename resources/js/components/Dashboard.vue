@@ -7,17 +7,30 @@
             <div class="w-1/3">
                 <doughnut-chart
                     :chart-data="dataCollection"
-                    :options="{responsive: true, maintainAspectRatio: true}"
+                    :options="{
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                boxWidth: 10,
+                                fontSize: 10,
+                                fontColor: 'rgb(200, 190, 180)',
+                                usePointStyle: true
+                            }
+                        }
+                    }"
                     :height="400">
                 </doughnut-chart>
             </div>
             <div>
                 <div class="flex flex-wrap mb-4">
                     <div class="w-1/3 p-4" v-for="(percent, key) in percents" :key="key">
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg" :style="percent.count !== 0 ? 'color: #FFF;background-color :' + percent.backgroundColor : '' ">
+                        <div class="card overflow-hidden bg-30" :style="percent.count !== 0 ? 'color: #FFF;background-color :' + percent.backgroundColor : '' ">
                             <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">{{ percent.name }}</div>
-                                <p class="text-grey-darker text-base">
+                                <div class="font-bold text-xl mb-2"><i :class="percent.icon"></i> {{ percent.name }}</div>
+                                <p class="text-grey-lighter text-base">
                                     {{ percent.count }} entries - {{ percent.percent }}%
                                 </p>
                                 <div class="progress mt-3">

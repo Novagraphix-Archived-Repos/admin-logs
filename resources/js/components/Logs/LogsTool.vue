@@ -7,7 +7,7 @@
                 <thead>
                     <tr>
                         <th v-for="(header, key) in headers" :key="key">
-                            <span :style="{ 'background-color' : key !== 'date' ? getColor(key) : '#1976D2' }" class="inline-block uk-badge">
+                            <span :style="{ 'background-color' : key !== 'date' ? getColor(key) : '#1976D2' }" class="card px-3 py-1 text-01">
                                 {{ header }}
                             </span>
                         </th>

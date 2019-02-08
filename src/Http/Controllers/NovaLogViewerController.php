@@ -164,7 +164,8 @@ class NovaLogViewerController extends Controller
                 'name'    => $names[$level],
                 'count'   => $count,
                 'percent' => $all ? round(($count / $all) * 100, 2) : 0,
-                'backgroundColor' => config('log-viewer.colors.levels.'. $level)
+                'backgroundColor' => config('log-viewer.colors.levels.'. $level),
+                'icon' => config('log-viewer.icons.'. $level)
             ];
         }
 

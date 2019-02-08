@@ -4,7 +4,7 @@
             <button :disabled="value === 0" type="button" @click="$router.push({name: 'nova-log-viewer-show', params: {
                 date: date,
                 level: key === 'date' ? 'all' : key
-            }})" :style="{ 'background-color' : key !== 'date' ? getColor(value === 0 ? 'empty' : key) : '#1976D2' }"  class="inline-block uk-badge">
+            }})" :style="{ 'background-color' : key !== 'date' ? getColor(value === 0 ? 'empty' : key) : '#1976D2' }"  class="card px-3 py-1 text-01">
                 {{ value }}
             </button>
         </td>
